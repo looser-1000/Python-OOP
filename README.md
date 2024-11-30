@@ -42,9 +42,9 @@ object attributes > class attributes (Preference basis)
 ```python
 Example:
 class Student:
-    name = “anonymous”  // class attribute
+    name = “anonymous”  # class attribute
    def __ init __(self, name):
-           self.name = name  // object attribute
+           self.name = name  # object attribute
            print(self.name)
 
 s1 = Student(“Farjad Ahmed”)
@@ -56,7 +56,7 @@ s1.name       # here in output we will get Farjad Ahmed and not anonymous becaus
 In OOP, inside the class all functions are said to be methods. Class is constructed with data(attributes) and methods(functions).
 ``` python
 class Student:
-    def welcome(self):  // method
+    def welcome(self):  #  method
           print(“Welcome !”)
 s1 = Student()
 print(s1.welcome()) 
@@ -67,8 +67,8 @@ print(s1.welcome())
 Methods that don’t use the self parameter. Static method works at the class level.
 ``` python
 class Student:
-    @staticmethod   / /decorator
-     def college():    // static function or method
+    @staticmethod   # decorator
+     def college():    # static function or method
           print(“420 College”)
 s1 = Student()
 print(s1.college())
@@ -79,8 +79,8 @@ print(s1.college())
 Class method is bound to the class and receives the class as an implicit first argument.
 ``` python
 class Student:
-        @classmethod   //decorator
-        def college(cls):  // class method
+        @classmethod   # decorator
+        def college(cls):  # class method
                pass
 
 ```
@@ -89,13 +89,13 @@ class Student:
 ``` python
 class Student:
       def __ init __(self,id,pass):
-           self.id = id    // public attr
-           __self.pass = pass  // private attr
-        // this attribute becomes private using __ before self.pass attributes. Since it becomes private attributes outside the Student class we can’t use this pass data. but inside the class if we define another method we can still use pass inside that method. Outside the Student class we can get that pass not directly but get access to the method which used that private attribute pass.
+           self.id = id    # public attr
+           __self.pass = pass  # private attr
+        #this attribute becomes private using __ before self.pass attributes. Since it becomes private attributes outside the Student class we can’t use this pass data. but inside the class if we define another method we can still use pass inside that method. Outside the Student class we can get that pass not directly but get access to the method which used that private attribute pass.
 
 s1 = student(101, abcde)
-print(s1.id)  // we get this
-print(s1.pass)  // can not get this
+print(s1.id)  #we get this
+print(s1.pass)  #can not get this
 
 
 
@@ -108,9 +108,9 @@ class Calculator:
        def add(self, a, b=0, c=0):
               return a+b+c
 calc = Calculator()
-print(calc.add(10))  // Adds one number
-print(calc.add(10,20)) //Adds two numbers
-print(calc.add(10,20,5)) //Adds three numbers
+print(calc.add(10))   #Adds one number
+print(calc.add(10,20))  #Adds two numbers
+print(calc.add(10,20,5)) #Adds three numbers
 
 
 ```
@@ -175,4 +175,3 @@ account.add_interest()
 
 
 ```
-
